@@ -25,7 +25,6 @@
     <h2>Prethodno dodani recepti:</h2>
     <div id="prethodni-recepti">
         <?php
-        // Provjerava postoji li XML datoteka s receptima
         if (file_exists('recepti.xml')) {
             $xml = simplexml_load_file('recepti.xml');
             foreach ($xml->recept as $recept) {
